@@ -1,0 +1,78 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "TestService",
+      "port": 3333,
+      "endpoints": [
+        {
+          "id": 1,
+          "name": "root",
+          "uri": "/",
+          "method": "GET",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "",
+          "response": "\n{\"message\": \"Welome\"}\n"
+        },
+        {
+          "id": 2,
+          "name": "hello",
+          "uri": "/hello",
+          "method": "GET",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "",
+          "response": "\n{\"message\": \"Hello World!\"}\n"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mock Server 2",
+      "port": 4444,
+      "endpoints": [
+        {
+          "id": 1,
+          "name": "root",
+          "uri": "/",
+          "method": "GET",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "",
+          "response": "\n{\"message\": \"Hi there!\"}\n"
+        },
+        {
+          "id": 2,
+          "name": "test",
+          "uri": "/test",
+          "method": "GET",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "",
+          "response": "\n{\"message\": \"Test test ..\"}\n"
+        },
+        {
+          "id": 3,
+          "name": "test post",
+          "uri": "/submit",
+          "method": "POST",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "{\"name\":\"Joe\"}",
+          "response": "\n{\"name\":\"Joe\"}\n"
+        },
+        {
+          "id": 4,
+          "name": "test",
+          "uri": "/test",
+          "method": "POST",
+          "echo" : false,
+          "contentType": "application/json; charset=UTF-8",
+          "request": "",
+          "response": "\n{\"message\": \"Test test ..\"}\n"
+        }
+      ]
+    }
+  ]
+}
